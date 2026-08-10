@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitchs Store</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#0d0d12;color:#fff}
+header{padding:25px 7%;background:#15151d;border-bottom:1px solid #292936;text-align:center}
+header h1{margin:0;color:#a855f7;font-size:34px}
+header p{color:#aaa}
+.container{width:90%;max-width:1300px;margin:40px auto}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:#181820;border:1px solid #292936;border-radius:18px;padding:15px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-7px);border-color:#a855f7}
+.card img{width:100%;height:300px;object-fit:cover;border-radius:14px;background:#222}
+.card h2{margin:15px 0 8px}
+.description{color:#b8b8c2;line-height:1.7;min-height:55px}
+.price{color:#a855f7;font-size:24px;font-weight:bold;margin:15px 0}
+.rating{color:#ffd43b;font-size:18px;margin-bottom:15px}
+button{width:100%;padding:12px;border:0;border-radius:10px;background:#7c3aed;color:white;font-size:16px;font-weight:bold;cursor:pointer}
+button:hover{background:#9333ea}
+@media(max-width:600px){.card img{height:350px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Bitchs Store 😂</h1>
+<p>أصحابنا ليهم أسعار وتقييمات مخصوص</p>
+</header>
+<div class="container">
+<div class="products">
+
+<div class="card">
+<img src="person1.jpg" alt="محمد سامح">
+<h2>محمد سامح</h2>
+<div class="description">🏙️ أكبر ماسح تعشير في العمرانية 😂</div>
+<div class="price">150 جنيه</div>
+<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<button onclick="addToCart()">أضف للقائمة 🛒</button>
+</div>
+
+<div class="card">
+<img src="person2.jpg" alt="عمرو أسامة">
+<h2>عمرو أسامة</h2>
+<div class="description">🔥 بيسخن بسرعة 😂<br>محب للجونسون</div>
+<div class="price">50 جنيه</div>
+<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<button onclick="addToCart()">أضف للقائمة 🛒</button>
+</div>
+
+<div class="card">
+<img src="person3.jpg" alt="حمزة أسامة">
+<h2>حمزة أسامة</h2>
+<div class="description">🍝 بيحب المكرونة بالبشاميل<br>⚡ سريع الكاريزما 😂</div>
+<div class="price">7 جنيه</div>
+<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<button onclick="addToCart()">أضف للقائمة 🛒</button>
+</div>
+
+</div>
+</div>
+<script>
+function addToCart(){alert("تمت الإضافة للقائمة 😂🛒");}
+</script>
+</body>
+</html>
