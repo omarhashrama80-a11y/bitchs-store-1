@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bitchs Store</title>
+
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#0d0d12;color:#fff}
@@ -24,45 +26,66 @@ button:hover{background:#9333ea}
 @media(max-width:600px){.card img{height:350px}}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>Bitchs Store 😂</h1>
+<h1>Bitchs Store</h1>
 <p>أصحابنا ليهم أسعار وتقييمات مخصوص</p>
 </header>
+
 <div class="container">
 <div class="products">
 
 <div class="card">
 <img src="person1.jpg" alt="محمد سامح">
 <h2>محمد سامح</h2>
-<div class="description">🏙️ أكبر ماسح تعشير في العمرانية 😂</div>
-<div class="price">150 جنيه</div>
-<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<div class="description">🏙️ أكبر ماسح تعشير في العمرانية</div>
+<div class="price">7.5 جنيه</div>
+<div class="rating"></div>
 <button onclick="addToCart()">أضف للقائمة 🛒</button>
 </div>
 
 <div class="card">
 <img src="person2.jpg" alt="عمرو أسامة">
 <h2>عمرو أسامة</h2>
-<div class="description">🔥 بيسخن بسرعة 😂<br>محب للجونسون</div>
+<div class="description">بيسخن بسرعة <br>محب للجونسون</div>
 <div class="price">50 جنيه</div>
-<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<div class="rating"></div>
 <button onclick="addToCart()">أضف للقائمة 🛒</button>
 </div>
 
 <div class="card">
 <img src="person3.jpg" alt="حمزة أسامة">
 <h2>حمزة أسامة</h2>
-<div class="description">🍝 بيحب المكرونة بالبشاميل<br>⚡ سريع الكاريزما 😂</div>
+<div class="description">🍝 بيحب المكروفه بالبشاميل<br>بيجبهم بسرعه علي رقاصات</div>
 <div class="price">7 جنيه</div>
-<div class="rating">⭐⭐⭐⭐⭐⭐⭐<br>التقييم: 7/7</div>
+<div class="rating"></div>
 <button onclick="addToCart()">أضف للقائمة 🛒</button>
 </div>
 
 </div>
 </div>
+
 <script>
-function addToCart(){alert("تمت الإضافة للقائمة 😂🛒");}
+function randomRatings() {
+  const ratings = document.querySelectorAll(".rating");
+
+  ratings.forEach(rating => {
+    const score = Math.floor(Math.random() * 7) + 1;
+    const stars = "⭐".repeat(score);
+
+    rating.innerHTML = stars + "<br>التقييم: " + score + "/7";
+  });
+}
+
+randomRatings();
+
+function addToCart() {
+  alert("تمت الإضافة للقائمة 😂🛒");
+}
 </script>
+
 </body>
 </html>
+```
